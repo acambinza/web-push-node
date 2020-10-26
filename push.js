@@ -10,8 +10,10 @@ const keysId = {
 push.setVapidDetails('acambinza@gmail.com', keysId.publicKey, keysId.privateKey)
 
 let sub = {
-    
-}
+    endpoint:"https://fcm.googleapis.com/fcm/send/dLiyRv4-H6I:APA91bFOGypT_RbAlrqHspKBCKin6S5qRI33R0aRQn4kpfor3INLKAMWsPfNevqQyVrF751LByg2SYcQgJPgUYcI_h7oKLW1Fl-VMTrxnVoxhgd4FTSTVOaquRrdUgro_98UvVO44mti",
+    expirationTime:null,
+    keys:{"p256dh":"BPCE8kM50X05E8iS8KoD8f4RmSCvgla6z2RheQpAcXpH-TbDGWHGkW7O1mrnX76knHU1lbaefyryv8X_Q1QEqIM",auth:"wTGYJqlbGUXykAUAdKSueA"}
+};
 
 push.sendNotification(sub, 'Test message')
 
