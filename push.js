@@ -7,7 +7,7 @@ const keysId = {
     privateKey: 'mIitwfSldQFhIPGaBgbQBvTWGjrXuMpCB0_Zv-XUEbo'
 }
 
-push.setVapidDetails('acambinza@gmail.com', keysId.publicKey, keysId.privateKey)
+push.setVapidDetails("faleconosco@driveinfest.info", keysId.publicKey, keysId.privateKey)
 
 let sub = {
     endpoint:"https://fcm.googleapis.com/fcm/send/dLiyRv4-H6I:APA91bFOGypT_RbAlrqHspKBCKin6S5qRI33R0aRQn4kpfor3INLKAMWsPfNevqQyVrF751LByg2SYcQgJPgUYcI_h7oKLW1Fl-VMTrxnVoxhgd4FTSTVOaquRrdUgro_98UvVO44mti",
