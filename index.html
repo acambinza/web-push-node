@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    </head>
+
+    <body>
+        <button onclick="subscribe()"> Subscribe </button>
+
+        <script>
+                addEventListener('load', async () => {
+                    let sw = await navigator.serviceWorker.register('./sw.js');
+                    console.log(sw)
+                });
+
+                async function subscribe() {
+                    let sw = await navigator.serviceWorker.ready;
+                    let push = await sw.pushManager.subscribe({
+                            userVisibleOnly: true,
+                            applicationServerKey: 'BOUY13VAiT16TFrpspI9K-8PYv7u53nTIhP6sM_ITow5_JzI96A1NZ63Eu3c65Xq-vk6LU5b15PpDLhW3B_A73c'
+                    });
+
+                    var private = 'mIitwfSldQFhIPGaBgbQBvTWGjrXuMpCB0_Zv-XUEbo'
+
+                    console.log(JSON.stringify(push))
+                }
+
+        </script>
+    </body>
+</html>
